@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,700;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: var(--darkest);
+  padding-top: 3rem;
+}
+
+#container {
+  width: 95%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* INPUT AND BUTTONS */
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: #374151;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+}
+
+button {
+  background: linear-gradient(to right, var(--pink), var(--purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+input::placeholder,
+button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+input::placeholder {
+  font-weight: 500;
+  opacity: 0.3;
+}
+
+#upperTask {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.taskform {
+  display: flex;
+}
+
+.taskform input[id="task-form-input-text"] {
+  flex: 1;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+#lowerTask {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tasksSec {
+  width: 100%;
+  display: flex;
+}
+
+.tasks {
+  flex: 1;
+  border-radius: 1rem;
+  height: 3rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem 1rem;
+}
+
+/* INPUT AND BUTTONS */
+
+/* other */
+
+.both {
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+.both h2 {
+  width: 200px;
+  display: inline;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.both button {
+  width: 100px;
+  margin-top: 7px;
+}
+
+/* other */
+
+/* Howers */
+
+button:hover {
+  background: linear-gradient(to right, var(--purple), var(--pink));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+}
+
+/* Howers */
